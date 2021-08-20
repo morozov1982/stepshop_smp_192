@@ -8,19 +8,30 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{% url 'index' %}">Home
-            <span class="sr-only">(current)</span>
+        <li class="nav-item
+                   {% if request.resolver_match.route == '' %}active{% endif %}
+                  ">
+          <a class="nav-link" href="{% url 'index' %}">Главная
+            {% if request.resolver_match.route == '' %}<span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'products:index' %}">Products</a>
+        <li class="nav-item
+                    {% if request.resolver_match.route == 'products/' %}active{% endif %}
+                  ">
+          <a class="nav-link" href="{% url 'products:index' %}">Продукты</a>
+          {% if request.resolver_match.route == 'products/' %}<span class="sr-only">(current)</span>{% endif %}
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'about' %}">About Us</a>
+        <li class="nav-item
+                    {% if request.resolver_match.route == 'about/' %}active{% endif %}
+                  ">
+          <a class="nav-link" href="{% url 'about' %}">О нас</a>
+          {% if request.resolver_match.route == 'about/' %}<span class="sr-only">(current)</span>{% endif %}
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'contacts' %}">Contact Us</a>
+        <li class="nav-item
+                    {% if request.resolver_match.route == 'contacts/' %}active{% endif %}
+                  ">
+          <a class="nav-link" href="{% url 'contacts' %}">Контакты</a>
+          {% if request.resolver_match.route == 'contacts/' %}<span class="sr-only">(current)</span>{% endif %}
         </li>
       </ul>
     </div>
