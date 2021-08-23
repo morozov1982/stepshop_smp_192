@@ -1,0 +1,74 @@
+[
+  {
+    "category": "Бобры",
+    "name": "Бобёр классический",
+    "image": "product_images/product-03.jpg",
+    "short_desc": "Шёрстка гладкая",
+    "description": "Строит плотины, зубы крепкие",
+    "price": "1000.00",
+    "quantity": 3
+  },
+  {
+    "category": "Бобры",
+    "name": "Бобёр синий",
+    "image": "product_images/product-02.jpg",
+    "short_desc": "Вечно синий",
+    "description": "Работать не умеет, всегда под мухой",
+    "price": "15.00",
+    "quantity": 18
+  },
+  {
+    "category": "Шнурки",
+    "name": "Шнурки финдебобельные",
+    "image": "product_images/product-06.jpg",
+    "short_desc": "Шнурки просто заглядение",
+    "description": "Сами зашнуровываются, сами завязываются",
+    "price": "5000.00",
+    "quantity": 31
+  },
+  {
+    "category": "Носки",
+    "name": "Белый носок",
+    "image": "",
+    "short_desc": "Очень красивы носок",
+    "description": "",
+    "price": "2300.00",
+    "quantity": 19
+  },
+  {
+    "category": "Бобры",
+    "name": "Бобёр трудовой",
+    "image": "product_images/product-03.jpg",
+    "short_desc": "Шёрстка гладкая",
+    "description": "Строит плотины, зубы крепкие, пашет",
+    "price": "1200.00",
+    "quantity": 4
+  },
+  {
+    "category": "Бобры",
+    "name": "Бобёр красный",
+    "image": "product_images/product-02.jpg",
+    "short_desc": "Вечно синий",
+    "description": "Ярый социалист",
+    "price": "45.00",
+    "quantity": 5
+  },
+  {
+    "category": "Шнурки",
+    "name": "Шнурки классические",
+    "image": "product_images/product-06.jpg",
+    "short_desc": "Шнурки обычные",
+    "description": "Учите детей завязывать шнурки",
+    "price": "20.00",
+    "quantity": 25
+  },
+  {
+    "category": "Носки",
+    "name": "Носок с кактусами",
+    "image": "",
+    "short_desc": "Для фанатов Мексики",
+    "description": "",
+    "price": "250.00",
+    "quantity": 17
+  }
+]
