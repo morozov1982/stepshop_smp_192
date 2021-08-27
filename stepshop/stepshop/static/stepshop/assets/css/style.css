@@ -1,0 +1,48 @@
+#pre-header .col-md-12 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.basket {
+    display: flex;
+    justify-content: flex-end;
+    width: 28px;
+    height: 26px;
+    background: url(../images/basket.png) no-repeat;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#pre-header span {
+    padding: 0;
+}
+
+#pre-header .basket span {
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: #3a8bcd;
+    border-radius: 50%;
+}
+
+#filters {
+    border: none;
+    background-color: transparent;
+}
+
+#filters a {
+    color: #1e1e1e;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#filters a:hover {
+    color: #3a8bcd;
+}
+
+#filters .active a {
+    color: #3a8bcd;
+}
