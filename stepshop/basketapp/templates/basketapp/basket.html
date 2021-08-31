@@ -11,6 +11,8 @@
                 <th scope="col">#</th>
                 <th scope="col">Продукт</th>
                 <th scope="col">Количество</th>
+                <th scope="col">Цена</th>
+                <th scope="col">&nbsp;</th>
             </tr>
             </thead>
             <tbody>
@@ -20,11 +22,24 @@
                 <th scope="row">{{ forloop.counter }}</th>
                 <td>{{ item.product }}</td>
                 <td>{{ item.quantity }}</td>
+                <td>{{ item.product.price }}</td>
+                <td>
+                    <button class="btn btn-round">
+                        <a href="{% url 'basket:remove' item.pk %}">удалить</a>
+                    </button>
+                </td>
             </tr>
             {% endfor %}
 
             </tbody>
         </table>
+
+        {% if basket %}
+            <div class="basket_summary">
+                В корзине {{ basket.0.total_quantity }} товаров общей стоимостью
+                         ${{ basket.0.total_cost }}
+            </div>
+        {% endif %}
     </div>
 </div>
 {% endif %}

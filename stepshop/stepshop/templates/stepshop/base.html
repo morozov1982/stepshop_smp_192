@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 {% load static %}
 
-<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -70,7 +70,7 @@
 
            <a href="{% url 'basket:view' %}" class="basket">
              {% if basket %}
-             <span>{{ basket|length }}</span>
+             <span>{{ basket.0.total_quantity }}</span>
              {%endif %}
            </a>
 

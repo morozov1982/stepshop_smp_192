@@ -1,5 +1,6 @@
 {% extends 'stepshop/base.html' %}
 {% load static %}
+{% load pic_tags %}
 
 {% block content %}
     <!-- Page Content -->
@@ -16,7 +17,7 @@
           <div class="col-md-6">
             <div class="product-slider">
               <div id="slider" class="flexslider">
-               <img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+               <img src="{{ product.image|media_folder_products }}" alt="{{ product.short_desc }}">
               </div>
             </div>
           </div>
@@ -61,7 +62,7 @@
             <div class="owl-carousel owl-theme">
               <a href="single-product.html">
                 <div class="featured-item">
-                  <img src="assets/images/item-01.jpg" alt="Item 1">
+                  <img src="/media/assets/images/default.png" alt="Item 1">
                   <h4>Proin vel ligula</h4>
                   <h6>$15.00</h6>
                 </div>

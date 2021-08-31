@@ -1,5 +1,6 @@
 {% extends 'stepshop/base.html' %}
 {% load static %}
+{% load pic_tags %}
 
 {% block content %}
     <!-- Page Content -->
@@ -39,7 +40,7 @@
               {% for product in products %}
                 <a href="#">
                   <div class="featured-item">
-                    <img src="/media/{{ product.image }}" alt="{{ product.short_desc }}">
+                    <img src="{{ product.image|media_folder_products }}" alt="{{ product.short_desc }}">
                     <h4>{{ product.name }}</h4>
                     <h6>${{ product.price }}</h6>
                     <p>{{ product.description }}</p>
